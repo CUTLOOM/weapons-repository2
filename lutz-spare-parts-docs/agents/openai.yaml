@@ -1,0 +1,4 @@
+interface:
+  display_name: "LUTZ Spare Parts Docs"
+  short_description: "Generate 补件唛头 and Spare Parts List from PIs for LUTZ/BDSK orders"
+  default_prompt: "I need to generate trade documents (补件唛头 and Spare Parts List) for a LUTZ furniture order"
