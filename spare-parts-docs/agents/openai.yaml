@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Spare Parts Doc Generator"
+  short_description: "Generate 补件唛头 (Shipping Marks) and Spare Parts List from PIs"
+  default_prompt: "I need to generate trade documents (补件唛头 and Spare Parts List) for a LUTZ furniture order"
+
