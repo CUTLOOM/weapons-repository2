@@ -1,0 +1,5 @@
+﻿interface:
+  display_name:  出货文件生成器
+  short_description: 从装柜数据PI生成5份出货文件
+  brand_color: #1E40AF
+  default_prompt: Use \-docs-generator to generate 5 shipping documents from the PI file.
