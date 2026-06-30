@@ -19,6 +19,7 @@ Run: python scripts/generate_docs.py --pi path/to/PI.xlsx
 
 Output: 补件唛头{ORDER}.xlsx in PI folder, SPL in 请款资料/
 
-## Resources
+## Critical Rules
+- Read ALL PI rows: for r in range(12, ws_pi.max_row + 1), check item_no and qty\n- NO blank rows between product groups (cr += len(parts), no +1)\n\n## Resources
 - scripts/generate_docs.py: Main generation script
 - references/format-rules.md: Formatting specifications
