@@ -7,7 +7,7 @@ from openpyxl.drawing.xdr import XDRPositiveSize2D
 from collections import OrderedDict
 sys.stdout.reconfigure(encoding="utf-8")
 
-DEFAULT_MASTER = r"D:\1. 德源\1. 订单\德源-GIGA\6. 产品信息汇总\LUTZ补件唛头汇总2026-6-9 更新.xlsx"
+DEFAULT_MASTER = r"D:\1. 德源\1. 订单\德源-GIGA\6. 产品信息汇总\LUTZ补件唛头汇总2026-6.6.9 更新.xlsx"
 
 def add_image(ws, img_data, row_1b, col_char, col_w_chars, row_h_pt):
     ni = XLImage(io.BytesIO(img_data))
@@ -41,7 +41,8 @@ def generate(pi_path, master_path, order_no=None):
         qty = ws_pi.cell(r, 6).value
         if not item_no or not qty:
             continue
-        dn = str(design).split(chr(10))[0].strip()
+        lines = str(design).split(chr(10))
+        dn = lines[1].strip() if len(lines) > 1 else lines[0].strip()
         if dn not in groups:
             groups[dn] = {"item_nos": [], "total_qty": 0}
         groups[dn]["item_nos"].append(str(item_no).strip())

@@ -1,0 +1,4 @@
+﻿# LUTZ Container Loader Skill
+display_name: "LUTZ 装柜数据生成器"
+short_description: "从PI生成LUTZ装柜数据Excel，含净重/毛重计算、公式、格式"
+default_prompt: "根据PI制作装柜数据"
